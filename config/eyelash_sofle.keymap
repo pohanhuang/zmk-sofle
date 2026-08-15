@@ -89,11 +89,47 @@
 &kp CAPS        &kp Q       &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P            &kp BSLH
 &kp LEFT_SHIFT  &kp A       &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp SEMI         &kp APOS
 &kp LCTRL       &kp Z       &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH         &kp ENTER
-&kp C_MUTE      &kp DELETE  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp ENTER    &kp ENTER        &kp ENTER  &kp ENTER  &mo 2      &kp RIGHT_SHIFT  &kp PRINTSCREEN
+&kp C_MUTE      &kp DELETE  &kp LEFT_GUI  &kp LEFT_ALT  &mo 0   &kp ENTER    &kp ENTER        &kp ENTER  &kp ENTER  &mo 0      &kp RIGHT_SHIFT  &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
             display-name = "LAYER0";
+        };
+
+        number-layer {
+            bindings = <
+&trans           &trans           &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans           &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp PLUS         &kp MINUS        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_MULTIPLY  &kp KP_DIVIDE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &kp KP_NUMBER_0  &kp PERIOD    &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            display-name = "LAYER3";
+            sensor-bindings = <&rsr_vol &rsr_trans>;
+        };
+
+        arrow-layer {
+            bindings = <
+&trans  &trans  &trans    &trans          &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans          &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &kp UP_ARROW    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans          &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        symbol-layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            display-name = "LAYER4";
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_1 {
@@ -120,42 +156,6 @@
 
             display-name = "LAYER2";
             sensor-bindings = <&rsr_vol &rsr_trans>;
-        };
-
-        number-layer {
-            bindings = <
-&trans           &trans           &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans           &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp PLUS         &kp MINUS        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp KP_MULTIPLY  &kp KP_DIVIDE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &kp KP_NUMBER_0  &kp PERIOD    &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            display-name = "LAYER3";
-            sensor-bindings = <&rsr_vol &rsr_trans>;
-        };
-
-        symbol-layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            display-name = "LAYER4";
-            sensor-bindings = <&rsr_vol &rsr_trans>;
-        };
-
-        arrow-layer {
-            bindings = <
-&trans  &trans  &trans    &trans          &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans          &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &kp UP_ARROW    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans          &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
