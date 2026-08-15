@@ -121,11 +121,11 @@
 
         symbol-layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(EXCLAMATION)  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &trans  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans               &trans       &trans    &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans                 &trans
+&trans  &trans               &trans       &trans    &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans                 &trans
+&trans  &trans               &trans       &trans    &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans                 &trans
+&trans  &trans               &trans       &trans    &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans
             >;
 
             display-name = "LAYER4";
